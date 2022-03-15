@@ -5,7 +5,7 @@ const response = await prompts({
     name: 'wordle',
     message: 'What word would you like to input?',
     validate: function(input) {
-        let length = input.length
+        
         if (input.length == 5) {
             return true
         }
@@ -13,7 +13,7 @@ const response = await prompts({
         if (input.length > 5) {
             return "This word is longer than 5 characters!"
         }
-        
+
         return "This word is shorter than 5 characters!"
     }
 });
