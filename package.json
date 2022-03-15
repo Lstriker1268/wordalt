@@ -1,0 +1,23 @@
+{
+  "name": "wordalt",
+  "version": "1.0.0",
+  "description": "An alternative to Wordle made using JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lstriker1268/wordalt.git"
+  },
+  "keywords": [
+    "wordle",
+    "game"
+  ],
+  "author": "Lstriker1268",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lstriker1268/wordalt/issues"
+  },
+  "homepage": "https://github.com/Lstriker1268/wordalt#readme"
+}
