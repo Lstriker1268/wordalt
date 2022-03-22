@@ -1,4 +1,6 @@
 import prompts from "prompts"
+import chalk from 'chalk';
+
 const words = ["alert", "alter", "later", "money"]
 
 // Gets a random word from the words array.
@@ -30,6 +32,8 @@ async function inquiry() {
 for (let i = 0; i < 6; i++) {
     if (await inquiry() == correctWord) {
         break; // stops for loop
+    } else {
+        console.log(chalk.redBright("✖ This is not the correct word!"));
     }
 }
 

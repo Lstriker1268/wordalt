@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Lstriker1268/wordalt#readme",
   "dependencies": {
+    "chalk": "^5.0.1",
     "prompts": "^2.4.2"
   },
   "devDependencies": {
