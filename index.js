@@ -28,6 +28,6 @@ async function inquiry() {
 }
 
 for(let i = 0; i < 6; i++) {
-    console.log(await inquiry())
+    console.log(await inquiry() == correctWord)
 }
 

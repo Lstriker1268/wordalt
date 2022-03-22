@@ -24,5 +24,8 @@
   "homepage": "https://github.com/Lstriker1268/wordalt#readme",
   "dependencies": {
     "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.11.0"
   }
 }
