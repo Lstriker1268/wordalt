@@ -1,7 +1,12 @@
 import prompts from "prompts"
 const words = ["alert", "alter", "later", "money"]
+
+// Gets a random word from the words array.
 const correctWord = words[Math.floor(Math.random() * words.length)];
 
+/**
+ * Returns word typed.
+ */
 async function inquiry() {
    return (await prompts({
         type: 'text',
