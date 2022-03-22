@@ -1,4 +1,6 @@
 import prompts from "prompts"
+const words = ["alert", "alter", "later", "money"]
+const correctWord = words[Math.floor(Math.random() * words.length)];
 
 async function inquiry() {
    return (await prompts({
@@ -23,4 +25,4 @@ async function inquiry() {
 for(let i = 0; i < 6; i++) {
     console.log(await inquiry())
 }
-var correctword = ["alert", "alter", "later", "money"]
+
