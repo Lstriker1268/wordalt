@@ -27,7 +27,9 @@ async function inquiry() {
     })).wordle
 }
 
-for(let i = 0; i < 6; i++) {
-    console.log(await inquiry() == correctWord)
+for (let i = 0; i < 6; i++) {
+    if (await inquiry() == correctWord) {
+        break;
+    }
 }
 
