@@ -29,7 +29,7 @@ async function inquiry() {
 
 for (let i = 0; i < 6; i++) {
     if (await inquiry() == correctWord) {
-        break;
+        break; // stops for loop
     }
 }
 
