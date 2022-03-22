@@ -20,7 +20,7 @@ async function inquiry() {
     })).wordle
 }
 
-for(let i = 0; i < 5; i++) {
+for(let i = 0; i < 6; i++) {
     console.log(await inquiry())
 }
-
+var correctword = ["alert", "alter", "later", "money"]
