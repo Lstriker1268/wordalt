@@ -20,4 +20,7 @@ async function inquiry() {
     })).wordle
 }
 
-console.log(await inquiry())
+for(let i = 0; i < 5; i++) {
+    console.log(await inquiry())
+}
+
