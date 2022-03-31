@@ -15,7 +15,7 @@ async function inquiry() {
         name: 'wordle',
         message: 'What word would you like to input?',
         validate: function(input) {
-            if (!words.includes(input)) {
+            if (!words.includes(input.toLowerCase())) {
                 return "This word is not included!"  
             }
 
@@ -37,7 +37,7 @@ for (let i = 0; i < 6; i++) {
     if (await inquiry() == correctWord) {
         break; // stops for loop
     } else {
-        console.log(chalk.redBright("✖ This is not the correct word!"));
+        console.log(chalk.redBright("X This is not the correct word!"));
     }
 }
 
