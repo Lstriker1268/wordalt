@@ -1,7 +1,7 @@
 import prompts from "prompts"
 import chalk from 'chalk';
 
-const words = ["alert", "alter", "later", "money"]
+const words = ["alert", "alter", "later", "money", "birds"]
 
 // Gets a random word from the words array.
 const correctWord = words[Math.floor(Math.random() * words.length)];
@@ -15,10 +15,14 @@ async function inquiry() {
         name: 'wordle',
         message: 'What word would you like to input?',
         validate: function(input) {
-            
+            if (!words.includes(input)) {
+                return "This word is not included!"  
+            }
+
             if (input.length == 5) {
                 return true
             }
+
 
             if (input.length > 5) {
                 return "This word is longer than 5 characters!"
