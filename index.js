@@ -30,7 +30,7 @@ async function inquiry() {
 
             return "This word is shorter than 5 characters!"
         }
-    })).wordle
+    })).wordle?.toLowerCase()
 }
 
 for (let i = 0; i < 6; i++) {
